@@ -1,5 +1,18 @@
-#boardItem {
+.boardElement > div{
+    padding: 0px 10px;
+    flex-direction: row;
     text-align: center;
     background-color: red;
     color: white;
+}
+
+.boardElement{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+#spacer{
+    padding: 0px 400px;
+    background-color: red;
 }
