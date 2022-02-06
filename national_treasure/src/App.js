@@ -8,13 +8,7 @@ import { getAnalytics } from "firebase/analytics";
 import {getFirestore, collection, getDocs} from '@firebase/firestore'
 import { addConsoleHandler } from 'selenium-webdriver/lib/logging';
 const firebaseConfig = {
-  apiKey: "AIzaSyDqym_VegUzxBGmT-8vNMDq0LFqhhIxBNA",
-  authDomain: "national-treasure-7040e.firebaseapp.com",
-  projectId: "national-treasure-7040e",
-  storageBucket: "national-treasure-7040e.appspot.com",
-  messagingSenderId: "868705212959",
-  appId: "1:868705212959:web:ac29d889809f696c30d32a",
-  measurementId: "G-7HGRXTRLW3"
+  //config
 };
 
 // Initialize Firebase
@@ -48,8 +42,8 @@ function App() {
     <div className="App">
       <h1 id='title'>LEADERBOARD</h1>
       <ul>
-        {board.map(b => (
-          <li>{b}</li>))}
+        {board.map(positions => (
+          <li>{positions}</li>))}
       </ul>
     </div>
   );
